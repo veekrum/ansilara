@@ -5,8 +5,8 @@
 3. Change the group_vars settings.
 4. Check the vars folder settings in order to make sure that you are ok with the defaulted settings.
 5. Run the playbook on the desired host:
-    - ansible-playbook -i ansible/provisioning/hosts/staging playbook.yml
-    - ansible-playbook -i ansible/provisioning/hosts/production playbook.yml
+    - ansible-playbook -i ansible/hosts/staging playbook.yml
+    - ansible-playbook -i ansible/hosts/production playbook.yml
 
 # What to expect
 This playbook will install all the needed elements for a Laravel 5.x application. 
