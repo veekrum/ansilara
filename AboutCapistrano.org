@@ -1,4 +1,4 @@
-# About Capistrano
+## About Capistrano
 
 Working with a capistrano was a interesting thing in the previous company.
 As a Capistrano is developed in the ruby all the codes are ruby-based and need ruby-dependecies like ruby-version, rvm/chruby .
