@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+    php:
+        build: php7-fpm
+        ports:
+            - 9000:9000
+        volumes:
+            - ${LARAVEL_APP_PATH}:/var/www
+    nginx:
+        build: nginx
+        ports:
+            - 80:80
+        volumes_from:
+            - php
+        volumes:
+            - ./logs/nginx/:/var/log/nginx
