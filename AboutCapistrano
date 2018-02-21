@@ -1,6 +1,6 @@
 ## About Capistrano
 
-Working with a capistrano was a interesting thing in the previous company.
+Working with a capistrano was a interesting thing
 As a Capistrano is developed in the ruby all the codes are ruby-based and need ruby-dependecies like ruby-version, rvm/chruby .
 It uses a SSH protocol while deploying. it executes the tasks serially. hooks are used while creating a task
 Simply understanding a capistrano, if we `cap install ` we will get a structure like this in each project.
