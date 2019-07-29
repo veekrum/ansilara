@@ -17,7 +17,7 @@ Simply understanding a capistrano, if we `cap install ` we will get a structure 
 
 1. The deploy.rb is a place where the configuration common to each environment can be specified, normally the repository URL and the user as whom to 
 deploy are specified here.
-2.config/deploy/(production/staging).rb -- configuration variable sepecific to your stage. 
+2.config/deploy/(production/staging).rb -- configuration variable sepecific to your environment. 
 3.lib/capistrano/tasks - consists the tasks that is executed serially while deploying.
 4.Capfile - including the tasks 
 
@@ -44,9 +44,9 @@ The folder structure made by capistrano in remote server
 commands
 1. cap production/staging deploy 
    i.   - cap is capistrano
-   ii.  - production is the stage [our environment] reads [(production/staging).rb]
+   ii.  - production is the env [our environment] reads [(production/staging).rb]
    iii. - deploy is the mentioning the file with deploy.rb 
- i.e - that means  litterally, capistrano deploy in production/staging reading a deploy.rb file
+ i.e - that means  literally, capistrano deploy in production/staging reading a deploy.rb file
 2. cap -T
    - shows the task available
 3. lots of the task that can rollback /revert , kill the tasks 
